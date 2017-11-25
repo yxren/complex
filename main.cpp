@@ -26,6 +26,8 @@ int main() {
     u_complex<float> v8;
     v8.show();
     print(cout, -v8);
+    auto v1_abs = v1.abs();
+    cout << v1_abs << endl;
 
 /*    complex<int> v1(1, 2);
     cout << v1 << endl;*/

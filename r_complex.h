@@ -21,10 +21,27 @@ public:
     void show() const {
         std::cout << "(" << re << "," << im << ")" << std::endl;
     }
+
     u_complex<T> conj() const {
         u_complex<T> v1(re, -im);
         return v1;
     }
+
+    T abs() const {
+        return hypot(re, im);
+    }
+
+    T norm() const {
+        return re * re + im * im;
+    }
+
+    T arg() const {
+        return atan2(im, re);
+    }
+
+    //polar
+    //proj
+
 
     template <class U> u_complex& operator=(const u_complex&);
     template <class U> u_complex& operator+=(const u_complex&);
@@ -95,6 +112,7 @@ template <class T> u_complex<T> operator+(const u_complex<T>&);
 template <class T> u_complex<T> operator-(const u_complex<T>&);
 template <class T> bool operator==(const u_complex<T>&, const u_complex<T>&);
 template <class T> bool operator!=(const u_complex<T>&, const u_complex<T>&);
+
 
 
 /*template <class T>
