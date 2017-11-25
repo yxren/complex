@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/athena/C++/complex/main.cpp
+iostream
+-
+complex
+-
+r_complex.h
+/Users/athena/C++/complex/r_complex.h
+
+/Users/athena/C++/complex/r_complex.h
+iostream
+-
+cmath
+-
+
